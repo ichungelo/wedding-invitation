@@ -128,7 +128,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
+					<h2 id="guest-name">Hello!</h2>
 					<h3>November 28th, 2016 New York, USA</h3>
 					<p>We invited you to celebrate our wedding</p>
 				</div>
@@ -611,6 +611,21 @@
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return false;
+};
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
@@ -625,6 +640,11 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+	
+	$("#guest-name").val(getUrlParameter("name"))
+
+
 </script>
 
 	</body>
