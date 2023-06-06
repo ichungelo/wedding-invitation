@@ -120,3 +120,16 @@ h4 {
     /* display: block; */
     
 }
+.salin:disabled{
+    background-color: darkgrey;
+    color: white !important;
+}
+.salin:focus{
+    background-color: darkgrey;
+    color: white !important;
+}
+
+.salin:hover{
+    background-color: darkgrey;
+    color: white !important;
+}

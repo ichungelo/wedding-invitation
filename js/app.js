@@ -567,7 +567,7 @@ window.addEventListener('load', () => {
     let modal = new bootstrap.Modal('#exampleModal');
     let name = getUrlParameter("to");
     console.log(name);
-    if (name.length == 0 && name != false) {
+    if (name.length == 0 || name == false) {
         document.getElementById('namatamu').remove();
     } else {
         let div = document.createElement('div');
