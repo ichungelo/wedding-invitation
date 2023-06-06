@@ -40,8 +40,8 @@ h4 {
 }
 
 .cropper {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -132,4 +132,8 @@ h4 {
 .salin:hover{
     background-color: darkgrey;
     color: white !important;
+}
+
+p, h5,h2 ,small {
+    color: #111111 !important;
 }
