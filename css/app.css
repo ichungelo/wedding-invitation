@@ -32,11 +32,28 @@ body {
 }
 
 .font-estetik {
-    font-family: 'Sacramento', cursive !important;
+    font-family: 'Dancing Script', cursive !important;
     color: #111111 !important;
 }
 h4 {
     color: #111111 !important;
+}
+
+.font-baru {
+    font-family: 'Poppins', cursive !important;
+    color: #111111 !important;
+}
+h4 {
+    color: #111111 !important;
+}
+.font-baru::before,
+.font-baru::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.3rem);
 }
 
 .cropper {
@@ -48,6 +65,20 @@ h4 {
 }
 
 .cropper>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.ornament {
+    width: 6rem;
+    height: 6rem;
+    position: center;
+    overflow: hidden;
+}
+
+.ornament>img {
     display: inline;
     margin: 0 auto;
     height: auto;
@@ -87,12 +118,12 @@ h4 {
 .top {
 
     background-image: url('../assets/images/top.png');
-    background-position: center; /* Center the image */
+    background-position: bottom; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     max-width: 450px;
     width: 100%;
-    height: calc(var(--vh,1vh) * 8);
+    height: calc(var(--vh,1vh) * 15);
     position: fixed;
     /* bottom: -62%; */
     top: 0;
@@ -106,12 +137,12 @@ h4 {
 .bottom {
 
     background-image: url('../assets/images/bottom.png');
-    background-position: center; /* Center the image */
+    background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     max-width: 450px;
     width: 100%;
-    height: calc(var(--vh,1vh) * 8);
+    height: calc(var(--vh,1vh) * 15);
     position: fixed;
     /* bottom: -62%; */
     bottom: 5%;
@@ -120,6 +151,7 @@ h4 {
     /* display: block; */
     
 }
+
 .salin:disabled{
     background-color: darkgrey;
     color: white !important;
