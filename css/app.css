@@ -61,7 +61,7 @@ h4 {
     height: 12rem;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .cropper>img {
@@ -73,7 +73,7 @@ h4 {
 
 .ornament {
     width: 6rem;
-    height: 6rem;
+    height: 2rem;
     position: center;
     overflow: hidden;
 }
@@ -83,6 +83,21 @@ h4 {
     margin: 0 auto;
     height: auto;
     width: 100%;
+}
+
+.nama {
+    width: 18rem;
+    height: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nama>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    z-index: 10;
 }
 
 .btn-music {
